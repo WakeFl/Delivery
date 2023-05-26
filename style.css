@@ -537,6 +537,11 @@ select {
     background: none;
     border: none;
     cursor: pointer;
+    color: #aa1f1f;
+}
+
+.meal__up,.meal__down {
+    font-size: 25px;
 }
 
 .cart__checkout {
