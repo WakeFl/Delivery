@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="done">
+        <img src="img/done-icon (1).svg" alt="done" >
+        <h3>We will call you soon</h3>
+    </div>
+    <div class="cross">
+        <img src="img/cross-icon.svg" alt="cross" >
+        <h3>Something wrong</h3>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="hat">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="cart.html" class="nav__link">Cart</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo">Delivery</a>
+            </div>
+        </div>
+    </header>
+    <form class="cart-info">
+        <h2 class="cart__title">Your Bag</h2>
+        <div class="container">
+            <div class="user">
+                <label class="user__info">
+                    Name:
+                    <input type="text" required name="name">
+                </label>
+                <label class="user__info">
+                    Email:
+                    <input type="email" required name="email">
+                </label>  
+                <label class="user__info" >
+                    Phone:
+                    <input type="phone" required name="phone">
+                </label>  
+                <label class="user__info">
+                    Address:
+                    <input type="address" required name="address">
+                </label>
+                <h3 class="cart__total">Total: $<span class="cart__total_qty"></span></h3>
+        <button type="submit" class="cart__checkout">SUBMIT</button>
+            </div>
+            <div class="cart__content">
+
+            </div>
+        </div>
+    </form>
+    <script src="js/cart.js"></script>
+</body>
+</html>

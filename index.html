@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notify">
+  
+    </div>
+    <div class="modal">
+        <div class="modal__overlay" id="modal__overlay"></div>
+        <div class="modal__window">
+            <button class="modal__close">X</button>
+            <h2 class="modal__title">Your Bag</h2>
+            <div class="modal__content"></div>
+            <h3 class="modal__total">Total: $<span class="modal__total_qty"></span></h3>
+            <a href="cart.html" class="modal__checkout">CHECKOUT</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="hat">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="cart.html" class="nav__link">Cart</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo">Delivery</a>
+                <button type="button" class="cart" id="cart"><span class="cart-num"></span></button>
+            </div>
+        </div>
+    </header>
+    <section class="goods">
+        <div class="container">
+            <aside class="search">
+                <input type="text" class="search__input" placeholder="Search...">
+                <div class="">
+                    <h4 class="search__title">Company</h4>
+                    <div class="search__producer">
+                        <button class="search__class active" data-company="All">All</button>
+                        <button class="search__class" data-company="McDaddy">McDaddy</button>
+                        <button class="search__class" data-company="Marcos">Marcos</button>
+                        <button class="search__class" data-company="Caressa">Caressa</button>
+                        <button class="search__class" data-company="Liddy">Liddy</button>
+                    </div>
+                </div>
+                <div class="search__price">
+                    <h4 class="search__title">Price</h4>
+                    <input type="range" class="search__range" >
+                    <p class="search__value">Value: $<span id="price"></span></p>
+                </div>
+            </aside>
+            <div class="products">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/notify.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src="js/cartAside.js"></script>
+</body>
+</html>
